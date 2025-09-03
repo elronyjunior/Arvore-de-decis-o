@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Árvore de Decisão do Vendedor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Árvore de Decisão do Vendedor</h1>
+    <form id="decisionForm">
+      <div style="margin-bottom:16px;background:#e0f7fa;padding:12px;border-radius:8px;font-size:1rem">
+        <b>Enunciado:</b> Informe os dados abaixo para simular a árvore de decisão.
+      </div>
+      <label>Preço de compra por kg</label>
+      <input type="number" id="precoCompra" min="0" step="0.01" value="3.5" required>
+      <label>Preço de venda por kg</label>
+      <input type="number" id="precoVenda" min="0" step="0.01" value="7.0" required>
+      <label>Percentual de perda no transporte (%)</label>
+      <input type="number" id="perda" min="0" max="100" value="30" required>
+      <label>Venda em dias de sol (kg)</label>
+      <input type="number" id="vendaSol" min="0" value="50" required>
+      <label>Venda em dias de chuva (kg)</label>
+      <input type="number" id="vendaChuva" min="0" value="20" required>
+      <label>Probabilidade de chuva (%)</label>
+      <input type="number" id="probChuva" min="0" max="100" value="40" required>
+      <label>Possibilidades de compra (kg, separados por vírgula)</label>
+      <input type="text" id="options" placeholder="Ex: 20,40,60,80" required>
+      <button type="submit">Montar Árvore</button>
+    </form>
+    <div class="tree" id="tree"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #f8ffae 0%, #43c6ac 100%);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  padding: 32px;
+}
+h1 {
+  text-align: center;
+  color: #43c6ac;
+  margin-bottom: 24px;
+}
+label {
+  font-weight: 500;
+  margin-top: 16px;
+  display: block;
+}
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+button {
+  background: #43c6ac;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 24px;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #2f8f83;
+}
+.tree {
+  margin-top: 32px;
+  text-align: center;
+}
+.node {
+  display: inline-block;
+  background: #e0f7fa;
+  border: 2px solid #43c6ac;
+  border-radius: 10px;
+  padding: 16px 24px;
+  margin: 8px;
+  min-width: 120px;
+  position: relative;
+  font-weight: 500;
+}
+.best {
+  background: #ffe082;
+  border-color: #ff9800;
+  box-shadow: 0 0 12px #ff9800a0;
+}
+.arrow {
+  width: 40px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
